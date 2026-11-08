@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="calculator">
+      <div class="display">
+        <div id="previous" class="previous"></div>
+        <div id="current" class="current">0</div>
+      </div>
+
+      <div class="keys">
+        <button data-action="clear" class="span-2 fn">C</button>
+        <button data-action="delete" class="fn">⌫</button>
+        <button data-operator="/" class="op">÷</button>
+
+        <button data-number="7">7</button>
+        <button data-number="8">8</button>
+        <button data-number="9">9</button>
+        <button data-operator="*" class="op">×</button>
+
+        <button data-number="4">4</button>
+        <button data-number="5">5</button>
+        <button data-number="6">6</button>
+        <button data-operator=251"-" class="op">−</button>
+
+        <button data-number="1">1</button>
+        <button data-number="2">2</button>
+        <button data-number="3">3</button>
+        <button data-operator="+" class="op">+</button>
+
+        <button data-operator="%" class="op">%</button>
+        <button data-number="0">0</button>
+        <button data-action="dot">.</button>
+        <button data-action="equals" class="equals">=</button>
+      </div>
+    </section>
+
+    <aside class="history">
+      <div class="history-header">
+        <h2>Historial</h2>
+        <button id="clear-history">Borrar</button>
+      </div>
+      <ul id="history-list"></ul>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
